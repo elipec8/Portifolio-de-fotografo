@@ -15,7 +15,7 @@ ul {
 }
 
 body {
-    background: #faf6ed;
+    background: #d4e2d8;
     color: #222;
     display: grid;
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
@@ -24,7 +24,7 @@ body {
 .menu {
     grid-column: 1 / 5;
     margin-bottom: 2rem;
-    background: #fb5;
+    background: #76db9b;
 }
 
 .menu ul {
@@ -47,6 +47,11 @@ body {
     letter-spacing: .1rem;
 }
 
+.menu li a:hover{
+    color: rgb(132, 158, 145);
+    font-size: 17px;
+}
+
 .grid-section {
     grid-column: 1 / 4;
     width: 100%;
@@ -66,6 +71,17 @@ body {
     text-align: left;
 }
 
+.contato{
+    margin-left: 70px;
+    font-family: Georgia;
+    font-size: 1;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    grid-column: 1 / 4;
+    text-align: left;
+}
+
 /* rem (Root EM) é uma unidade relativa de medida em CSS, baseada no tamanho da fonte raiz do documento (geralmente definida no html). Por exemplo, se o tamanho da fonte raiz for 16px, 1rem será equivalente a 16px.*/
 
 .animais h2::before {
@@ -74,7 +90,7 @@ body {
     width: 40px;
     height: 10px;
     margin-right: 10px;
-    background: #fb5;
+    background: #76db9b;
 }
 
 .animais p {
@@ -99,11 +115,11 @@ body {
  
 
 .animais-lista::-webkit-scrollbar-track {
-    background: #faf6ed;
+    background: #d4e2d8;
 }
 
 .animais-descriscao {
-    grid-column: 3;
+    grid-column: 3/5;
 }
 
 .animais-descriscao section {
@@ -111,6 +127,7 @@ body {
 }
 
 .faq-lista dt {
+    grid-column: 3;
     font-family: monospace;
     font-weight: bold;
     margin-top: 2rem;
@@ -124,13 +141,13 @@ body {
     width: 20px;
     height: 10px;
     margin-right: 10px;
-    background: #FB5;
+    background: #76db9b;
 }
 
 .faq-lista dd{
     font-family: Helvetica, Arial ;
     margin-bottom: 5rem;
-        margin-left: 30px;
+    margin-left: 30px;
 }
 
 .mapa {
@@ -138,7 +155,7 @@ body {
 }
 
 .dados{
-    grid-column: 3;
+    grid-column: 2;
 }
 
 .dados li{
@@ -152,13 +169,13 @@ body {
     width: 20px;
     height: 10px;
     margin-right: 10px;
-    background: #FB5;
+    background: #76db9b;
 }
 
 .copy {
     grid-column: 1/5;
     margin-bottom: 0;
-    background: #FB5;
+    background: #76db9b;
 }
 
 .copy p {
@@ -168,9 +185,29 @@ body {
 }
 
 .foto-perfil{
-    grid-column: 5/5;
+    grid-column: 2/5;
     margin-left:auto;
+    margin-right: 30%;
     border-radius: 100%;
+}
+
+.pessoal{
+    font-family: Helvetica, Arial;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.sobre{
+    margin-top: 5%;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(95, 83, 83)
 }
 
 @media (max-width: 700px){
@@ -191,7 +228,7 @@ body {
         grid-column: 1;
 
     }
-    .faq-lista, .dados, .mapa{
+    .faq-lista, .dados, .contato{
         grid-column: 1/3;
     }
     .grid-section h1{
@@ -210,10 +247,12 @@ body {
     display: none;
 }
 
-.js-tabcontent,section.ativo{
+.js-tabcontent, section.ativo{
     display: block !important;
     animation: show 1s forwards;
 }
+
+
 
 @keyframes show{
     from{
