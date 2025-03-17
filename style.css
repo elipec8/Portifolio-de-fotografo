@@ -84,7 +84,10 @@ body {
     margin-bottom: 1rem;
     grid-column: 1 / 4;
     text-align: left;
+
 }
+
+
 
 /* rem (Root EM) é uma unidade relativa de medida em CSS, baseada no tamanho da fonte raiz do documento (geralmente definida no html). Por exemplo, se o tamanho da fonte raiz for 16px, 1rem será equivalente a 16px.*/
 
@@ -101,6 +104,7 @@ body {
     font-family: Helvetica, arial;
     line-height: 1.2;
     margin-bottom: 1rem;
+    background-color: #c1d8c9;
 }
 
 .animais-lista {
@@ -124,6 +128,7 @@ body {
 
 .animais-descriscao {
     grid-column: 3/5;
+
 }
 
 .animais-descriscao section {
@@ -137,7 +142,7 @@ body {
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: .5rem;
-    color: #E54
+    color: #E54;
 }
 
 .faq-lista dt::before {
@@ -153,6 +158,7 @@ body {
     font-family: Helvetica, Arial ;
     margin-bottom: 5rem;
     margin-left: 30px;
+    background-color: #c1d8c9;
 }
 
 .mapa {
@@ -161,6 +167,7 @@ body {
 
 .dados{
     grid-column: 2;
+    background-color: #c1d8c9;
 }
 
 .dados li{
@@ -200,6 +207,7 @@ body {
     font-family: Helvetica, Arial;
     margin-right: 10%;
     margin-top: 5%;
+    background-color: #c1d8c9;
 }
 
 .sobre{
