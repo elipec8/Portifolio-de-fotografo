@@ -58,7 +58,7 @@ body {
     box-sizing: border-box;
     padding: 10px;
     display: grid;
-    grid-template-columns: 120px 300px 400px;
+    grid-template-columns: 120px 390px 400px;
 }
 
 .titulo {
@@ -69,6 +69,10 @@ body {
     margin-bottom: 1rem;
     grid-column: 4 / 4;
     text-align: left;
+}
+
+.Titulo{
+    margin-left: 70%;
 }
 
 .contato{
@@ -127,6 +131,7 @@ body {
 }
 
 .faq-lista dt {
+    font-size: 14px;
     grid-column: 3;
     font-family: monospace;
     font-weight: bold;
@@ -207,7 +212,7 @@ a{
 }
 
 a:hover{
-    color: rgb(95, 83, 83)
+    color: rgb(163, 126, 126)
 }
 
 @media (max-width: 700px){
